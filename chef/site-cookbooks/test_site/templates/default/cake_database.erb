@@ -1,0 +1,25 @@
+<?php
+class DATABASE_CONFIG {
+
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => '<%= @login %>',
+		'password' => '<%= @password %>',
+		'database' => '<%= @database %>',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+
+	public $test = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => '<%= @test_login %>',
+		'password' => '<%= @test_password %>',
+		'database' => '<%= @test_database %>',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+}

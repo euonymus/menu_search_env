@@ -1,0 +1,4 @@
+[submodule "src/cakephp-2.5.5"]
+	path = src/cakephp-2.5.5
+	url = git@github.com:euonymus/euonymus_cakephp_tool.git
+	ignore = dirty

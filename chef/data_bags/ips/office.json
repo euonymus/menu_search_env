@@ -1,0 +1,15 @@
+{
+  "id": "office",
+  "till2014": {
+    "encrypted_data": "KziAO/e9JqU7VZPDwh5I+peewa/VyPQ2tRZqiPO2wqVrH5qLBXo7N5QY1nwc\nOjPw0I0/WpB+GPNarDK58Tg+gg==\n",
+    "iv": "eKfNtxhtkFjD1OxmMh9zxQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "aftr2014": {
+    "encrypted_data": "M8MCw83d/2zB8MuTe3D8elHoA9Ar3VmiBEz1/n/N1nNctvRkizaXDntJWUp5\nxExWF/cSdXZIXyX8UHFV4UfshiGdqAFKUOqz3XVvKvOPZus=\n",
+    "iv": "vgjUXPoOeQxLiJWquckL9A==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
