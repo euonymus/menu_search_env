@@ -27,6 +27,18 @@
     $ git submodule init
     $ git submodule update
 
+# Prepare the Phpunit source
+
+    $ cd {menu_search_env}/src/cakephp-2.5.5/app
+    $ Console/cake Phpunit.Phpunit install
+
+（略）
+Installing PHPUnit 3.7 ...
+1. /app/Vendor/
+2. /vendors/
+Select VENDOR path to install into (q/1/2)
+[q] > 1
+
 # Prepare cookbooks
 
     $ cd {menu_search_env}/chef
