@@ -11,8 +11,12 @@
 
 # Prepare following files
 
-* data_bag_key
-* ../digitalocean_token/digitalocean_token.rb
+* src/cakephp-2.5.5
+* src/secrets/data_bag_key
+* src/digitalocean/digitalocean_token.rb
+
+    $ git submodule init
+    $ git submodule update
 
 
 # Prepare cookbooks
