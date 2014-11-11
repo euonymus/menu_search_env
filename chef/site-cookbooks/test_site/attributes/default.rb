@@ -5,10 +5,10 @@ default[:test_site][:cache_root]  = "/var/cache"
 default[:test_site][:log_root]    = "/var/log"
 default[:test_site][:app_root]    = "#{node[:test_site][:www_root]}/#{node[:test_site][:app_name]}"
 
-default[:test_site][:db_name]     = 'euonymus'
-default[:test_site][:db_user]     = 'euonymus'
-default[:test_site][:testdb_name] = 'test_euonymus'
-default[:test_site][:testdb_user] = 'euonymus'
+default[:test_site][:db_name]     = 'restaurant_menu'
+default[:test_site][:db_user]     = 'restaurant_menu'
+default[:test_site][:testdb_name] = 'test_restaurant_menu'
+default[:test_site][:testdb_user] = 'restaurant_menu'
 
 default[:test_site][:cake_source] = '/vagrant/src/cakephp-2.5.5'
 default[:test_site][:cake_cache]  = "#{node[:test_site][:cache_root]}/#{node[:test_site][:app_name]}"
@@ -19,7 +19,7 @@ default[:test_site][:cake_log]    = "#{node[:test_site][:log_root]}/#{node[:test
 
 # default[:test_site][:db_password] = 'anothersecurepassword'
 # node.set_unless['mysql']['server_root_password'] = 'hoge'
-default[:test_site][:secretpath] = "/vagrant/data_bag_key"
+default[:test_site][:secretpath] = "/vagrant/src/secrets/data_bag_key"
 
 # look for secret in file pointed to by test_site attribute :secretpath
 mysql_secret = Chef::EncryptedDataBagItem.load_secret("#{node[:test_site][:secretpath]}")

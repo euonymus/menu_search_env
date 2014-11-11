@@ -1,4 +1,10 @@
 [submodule "src/cakephp-2.5.5"]
 	path = src/cakephp-2.5.5
-	url = git@github.com:euonymus/euonymus_cakephp_tool.git
+	url = git@github.com:euonymus/menu_search.git
 	ignore = dirty
+[submodule "src/secrets"]
+	path = src/secrets
+	url = git@bitbucket.org:euonymus/menu_search_secrets.git
+[submodule "src/digitalocean"]
+	path = src/digitalocean
+	url = git@bitbucket.org:euonymus/digitalocean_token.git

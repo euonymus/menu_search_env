@@ -55,12 +55,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # View the documentation for the provider you're using for more
   # information on available options.
   # load 'digitalocean_token.rb'
-  load '../digitalocean_token/digitalocean_token.rb'
+  load 'src/digitalocean/digitalocean_token.rb'
   config.vm.provider 'digital_ocean' do |vb, ovr|
     ovr.ssh.private_key_path = "~/.ssh/id_rsa_digitalocean"
     ovr.vm.box = "digital_ocean"
     ovr.vm.box_url = "https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box"
-    ovr.vm.hostname = "euonymus"
+    ovr.vm.hostname = "restaurant-menu"
     #ovr.vm.synced_folder "./src", "/var/www/test_site", :create => true, :owner => 'vagrant', :group => 'vagrant', :mount_options => ['dmode=777', 'fmode=666']
 
     vb.token = TOKEN

@@ -1,4 +1,4 @@
-default[:iptables][:secretpath] = "/vagrant/data_bag_key"
+default[:iptables][:secretpath] = "/vagrant/src/secrets/data_bag_key"
 
 # look for secret in file pointed to by iptables attribute :secretpath
 office_ip_secret = Chef::EncryptedDataBagItem.load_secret("#{node[:iptables][:secretpath]}")

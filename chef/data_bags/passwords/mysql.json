@@ -1,14 +1,14 @@
 {
   "id": "mysql",
   "development": {
-    "encrypted_data": "KEPetoXarXVwpVquxYw9FwrHubnJk+CPp2M+CQDltapX7PMtX3P+VE/rkF5i\nV4Ap7WL4HR+pwT45JOnhpgrw29gGmf7tyRDro8hWGR8UkLhO2ZgLrO0YkMzM\nacwgd6AMOZECYcm1FFHo+O+Mvl1dtyPeuAbeDfRAUFiyp+rRoXOADd7Fc413\nKmyNuWxjykB47h2pI0MRq3jBTM6Vrb/qr7/E7L6ca6WrlS8bFJ0mHWlXYcrA\n7LW0cmywqWEvog9RJhF1t1nbfxqlw76TdDqdpnkVczO9PsMDxnX/ad5NTbk=\n",
-    "iv": "+GSFvc53T5cn+xv3OXs2Uw==\n",
+    "encrypted_data": "tJHJML5L/GDdvMInEURmqkr92XZenmn5qjT+mOi1sVhZjTbaC8jmF7GMv4FY\nEWHXGPjebDaDS1JXAapodtE9b4aJeJIkv+7v1JwTRdC3ect9Yz3EI98JxB0i\nDALtnrUQFsVw/65LFEInrb+Gf5lXS69MPabLQtoIAok2rj+KBPND9AULn3vb\nDJVQqFHTdG2/YdB6G6wTQenQnMuPhzPLTQYQuCsl7PlrXo1Apwdox0FWy6ie\n5jme1t8+WwEc27Qt\n",
+    "iv": "vYr3txoBhV5vRAGaLz+GKg==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   },
   "production": {
-    "encrypted_data": "dAG9x5DbN3ODYz9BLj2C4Gqm1bbzVTS2Am37ARgCS4ZJ8O/fvNpUqcuJIxZ+\n8n+P1ZayJjOmseCd5IlMcHOfXZzXOMJ6AGbYEesXsZM7kz4twPn4hxwvzzfE\nvui6KvXpgJUQQ2ZT38OMh6r7Ry6hCHkgdgXt2CXV4F89lYr84IIhvhP95ofN\nf68nnj17kEXYhYxmiP+sENqzdWF7iSpztZ7Z51YE0Ntiym5HS85HcRfcuA1g\nwNjjBnA5mwJAFK6Qducd4DvVzJieWuFKQhp48YoI2FsSYJCvuDQ10FsKaxQ=\n",
-    "iv": "nPblN7Y8h6m1ULlz+T6iqg==\n",
+    "encrypted_data": "oJCD26WZRQCawIpE4vBimzTmZUT9aWHloxW7NshLFZffsszUYvXa4pPG26E4\nMMfVtwTl/PQysWdk2tTlENLvbjR+rNNJKfFzpY+8i9zEXH4Nt+QBhochVcIY\nA8WUopePUbvKVwS7nrtJB2iyXSBRibRXbh4TRHsFtRwe2rpG5j/CZAiEwiZn\nvhw9g1QIJYgceWG6GmuBZWqf+TopWaux1EBx1pNzki4c4nJ1E5ExN/3+CCmj\nI7D+dQ208VuR1me3\n",
+    "iv": "otrMX1cstRsws8hvTCaSxA==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
