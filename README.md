@@ -39,6 +39,8 @@ Installing PHPUnit 3.7 ...
 Select VENDOR path to install into (q/1/2)
 [q] > 1
 
+* インストール場所を聞かれるので、「app/Vendor」を選択
+
 # Prepare cookbooks
 
     $ cd {menu_search_env}/chef
