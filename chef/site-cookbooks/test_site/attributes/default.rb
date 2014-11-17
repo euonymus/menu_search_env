@@ -41,8 +41,8 @@ default['php']['directives'] = {
 case node["platform_family"]
 when "rhel", "fedora"
   if node['platform_version'].to_f < 6 then
-    default['php']['packages'] = ['php53', 'php53-devel', 'php53-cli', 'php53-mbstring', 'php-pear']
+    default['php']['packages'] = ['php53', 'php53-devel', 'php53-cli', 'php53-mbstring', 'php-pear', 'php53-gd']
   else
-    default['php']['packages'] = ['php', 'php-devel', 'php-cli', 'php-mbstring', 'php-pear']
+    default['php']['packages'] = ['php', 'php-devel', 'php-cli', 'php-mbstring', 'php-pear', 'php-gd']
   end
 end
