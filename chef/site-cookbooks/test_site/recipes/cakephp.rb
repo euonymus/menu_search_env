@@ -50,6 +50,9 @@ end
 # file node[:test_site][:cake_source] + '/app/Config/database.php' do
 #   content IO.read(node[:test_site][:cake_source] + '/app/Config/database.php.default')
 # end
+# file node[:test_site][:cake_source] + '/app/Config/database.php.default' do
+#   action :delete
+# end
 template node[:test_site][:cake_source] + '/app/Config/database.php' do
   source 'cake_database.erb'
   owner "www-data"
@@ -63,6 +66,17 @@ template node[:test_site][:cake_source] + '/app/Config/database.php' do
      :test_password => node[:test_site][:db_password]
   })
 end
-# file node[:test_site][:cake_source] + '/app/Config/database.php.default' do
-#   action :delete
-# end
+
+
+
+template node[:test_site][:cake_source] + '/app/Config/bootstrap.php' do
+  source 'cake_bootstrap.erb'
+  owner "www-data"
+  group "www-data"
+  variables({
+     :twitter_key     => node[:test_site][:twitterkey],
+     :twitter_secret  => node[:test_site][:twittersecret],
+     :facebook_id     => node[:test_site][:facebookid],
+     :facebook_secret => node[:test_site][:facebooksecret]
+  })
+end

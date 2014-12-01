@@ -22,14 +22,27 @@ default[:test_site][:cake_log]    = "#{node[:test_site][:log_root]}/#{node[:test
 default[:test_site][:secretpath] = "/vagrant/src/secrets/data_bag_key"
 
 # look for secret in file pointed to by test_site attribute :secretpath
-mysql_secret = Chef::EncryptedDataBagItem.load_secret("#{node[:test_site][:secretpath]}")
-mysql_creds = Chef::EncryptedDataBagItem.load("passwords", "mysql", mysql_secret)
-if mysql_secret && mysql_passwords = mysql_creds[node.chef_environment] 
+databag_secret = Chef::EncryptedDataBagItem.load_secret("#{node[:test_site][:secretpath]}")
+mysql_creds = Chef::EncryptedDataBagItem.load("passwords", "mysql", databag_secret)
+if databag_secret && mysql_passwords = mysql_creds[node.chef_environment] 
   node.set_unless['mysql']['server_root_password'] = mysql_passwords['root']
   node.set_unless['mysql']['server_debian_password'] = mysql_passwords['debian']
   node.set_unless['mysql']['server_repl_password'] = mysql_passwords['repl']
   node.set_unless['test_site']['db_password'] = mysql_passwords['app']
 end
+
+# look for opauth secret
+opauth_creds = Chef::EncryptedDataBagItem.load("tokens", "opauth", databag_secret)
+if databag_secret && twitter_token = opauth_creds["twitter"] 
+  default[:test_site][:twitterkey] = twitter_token['key']
+  default[:test_site][:twittersecret] = twitter_token['secret']
+end
+
+if databag_secret && facebook_token = opauth_creds["facebook"] 
+  default[:test_site][:facebookid] = facebook_token['app_id']
+  default[:test_site][:facebooksecret] = facebook_token['app_secret']
+end
+
 
 # php.ini setting
 default['php']['conf_dir'] = '/etc/php5/apache2'
