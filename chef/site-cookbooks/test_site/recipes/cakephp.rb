@@ -69,8 +69,8 @@ end
 
 
 
-template node[:test_site][:cake_source] + '/app/Config/bootstrap.php' do
-  source 'cake_bootstrap.erb'
+template node[:test_site][:cake_source] + '/app/Config/opauth.php' do
+  source 'cake_opauth.erb'
   owner "www-data"
   group "www-data"
   variables({
