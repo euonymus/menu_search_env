@@ -9,7 +9,12 @@
 * vagrant-omnibus
 
 
-# Prepare following files
+# Prepare cookbooks
+
+    $ cd {menu_search_env}/chef
+    $ librarian-chef install
+
+# Prepare following files as git submodules
 
     $ git submodule init
     $ git submodule update
@@ -41,7 +46,10 @@ Select VENDOR path to install into (q/1/2)
 
 * インストール場所を聞かれるので、「app/Vendor」を選択
 
-# Prepare cookbooks
+# Prepare Opauth source
 
-    $ cd {menu_search_env}/chef
-    $ librarian-chef install
+    $ cd {menu_search_env}/src/cakephp-2.5.5/app/Plugin/Opauth
+    $ git checkout master
+    $ git submodule init
+    $ git submodule update
+
