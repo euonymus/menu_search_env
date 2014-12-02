@@ -67,8 +67,6 @@ template node[:test_site][:cake_source] + '/app/Config/database.php' do
   })
 end
 
-
-
 template node[:test_site][:cake_source] + '/app/Config/opauth.php' do
   source 'cake_opauth.erb'
   owner "www-data"
@@ -78,5 +76,14 @@ template node[:test_site][:cake_source] + '/app/Config/opauth.php' do
      :twitter_secret  => node[:test_site][:twittersecret],
      :facebook_id     => node[:test_site][:facebookid],
      :facebook_secret => node[:test_site][:facebooksecret]
+  })
+end
+
+template node[:test_site][:cake_source] + '/app/Config/debuglevel.php' do
+  source 'cake_debuglevel.erb'
+  owner "www-data"
+  group "www-data"
+  variables({
+     :debuglevel => 0
   })
 end
