@@ -1,14 +1,14 @@
 {
   "id": "opauth",
   "twitter": {
-    "encrypted_data": "Wy7b+jt24wgaDTn6zMbg2A94xYdLBd2U39f0mI5PtT1xy3bn+LObz53Bwkkb\nu0nIrARArepRG62zhq3leahl47HfnaNIol/gqPz+pkV7ppuH0gxHO8byDeZ8\nYg0ZwngVoT5oz/VS+7r6zI/c08x8Vg==\n",
-    "iv": "CWHNXwB1cfCmqOh3Iwde8Q==\n",
+    "encrypted_data": "2f2K+dg9WNhVrLrzGEDF4uE3BhSocft6CfTOpyWyAxBTGDEaq+GAGURAYMHw\nASl2KunWfSTpuicDjc6+NaTd+7NgPIHq0ffP//tMSnCE2t8TinhTGsTJ2gDK\nUl+kvDK2oL9zYRyMGapZY6KVwRjjJQ==\n",
+    "iv": "7yyWqjOHaZPc8AIMHgeG0A==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   },
   "facebook": {
-    "encrypted_data": "T9vIsDou9MN+GjToQ2TIMoNtRY6yt8fFGt9JGR3iMzVbPpArLd0cuTF6g0DR\n3gc/AxacPX8rWE7YoSuiOW/uer00LMtRwDtVftISHlrDB/0ERJqKXnrBOEIw\nGKZa/w3Z\n",
-    "iv": "9vaS0euhQC+ZbZh3udzltQ==\n",
+    "encrypted_data": "FwrBH9wI7veAlclCu4sSbD1YW2NQOIGakKFr+oDVvXOrQw8la960pcQK3CSY\nojPQHwzfGldG2skbsg4wZPvk7BbazAARWhxPN10MLZ/wgFcGYzp9ZZ9ScjgC\nglhINLWI\n",
+    "iv": "HZxaAVdfK8rXBPKFebyNZQ==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
