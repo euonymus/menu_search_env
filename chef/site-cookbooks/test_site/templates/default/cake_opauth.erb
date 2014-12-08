@@ -7,5 +7,6 @@ Configure::write('Opauth.Strategy.Twitter', array(
 ));
 Configure::write('Opauth.Strategy.Facebook', array(
    'app_id'        => '<%= @facebook_id %>',
-   'app_secret'    => '<%= @facebook_secret %>'
+   'app_secret'    => '<%= @facebook_secret %>',
+   'scope'         => 'email,public_profile,user_friends',
 ));
