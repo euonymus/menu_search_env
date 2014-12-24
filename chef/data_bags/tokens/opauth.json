@@ -1,14 +1,14 @@
 {
   "id": "opauth",
   "twitter": {
-    "encrypted_data": "2f2K+dg9WNhVrLrzGEDF4uE3BhSocft6CfTOpyWyAxBTGDEaq+GAGURAYMHw\nASl2KunWfSTpuicDjc6+NaTd+7NgPIHq0ffP//tMSnCE2t8TinhTGsTJ2gDK\nUl+kvDK2oL9zYRyMGapZY6KVwRjjJQ==\n",
-    "iv": "7yyWqjOHaZPc8AIMHgeG0A==\n",
+    "encrypted_data": "I/Zd1IOQ0GasPH6eNXcmK0tn6crT+qSzN00YpqE7606AHYbZHxdawpioz9Ee\nNNnEI4GMYwigGzV+LfAt71Wx9YWXzIe6S7KfIIhlVqqGwu5xLq3W2Glj40zh\nZu6yVi8/W2mcgrj5ixSww5qvErKOebxIIVtHp/VQMWDd+8vk1M4=\n",
+    "iv": "vo/a7u2y3EgYvF+A/mOGKg==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   },
   "facebook": {
-    "encrypted_data": "FwrBH9wI7veAlclCu4sSbD1YW2NQOIGakKFr+oDVvXOrQw8la960pcQK3CSY\nojPQHwzfGldG2skbsg4wZPvk7BbazAARWhxPN10MLZ/wgFcGYzp9ZZ9ScjgC\nglhINLWI\n",
-    "iv": "HZxaAVdfK8rXBPKFebyNZQ==\n",
+    "encrypted_data": "vm7XvykW4L6lWVn0Gmia4W113dtoSI8IwOPf6HeqfcUkSLfFBYJlc1dPHey5\nE0ywrvIoqp001KO2x6u2sZdFf67WitQWPb6+Aymab2H8+afum1RsF+8lA8Sa\nrU0r8gtp\n",
+    "iv": "dh5KYuZYn7qUcNOnnN78aQ==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
