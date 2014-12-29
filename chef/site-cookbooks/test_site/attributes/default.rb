@@ -47,8 +47,11 @@ end
 # php.ini setting
 default['php']['conf_dir'] = '/etc/php5/apache2'
 default['php']['directives'] = {
-  "date.timezone" => "Asia/Tokyo",
-  "short_open_tag" => "On"
+  "date.timezone"       => "Asia/Tokyo",
+  "short_open_tag"      => "On",
+  #"memory_limit"        => "40M",
+  "post_max_size"       => "16M",
+  "upload_max_filesize" => "16M"
 }
 
 case node["platform_family"]
