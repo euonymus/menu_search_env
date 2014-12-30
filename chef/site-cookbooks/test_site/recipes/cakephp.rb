@@ -1,3 +1,4 @@
+# create tmp directory
 directory node[:test_site][:cake_source] + '/app/tmp' do
  owner "www-data"
  group "www-data"
@@ -34,6 +35,12 @@ directory node[:test_site][:cake_source] + '/app/tmp/sessions'  do
  mode "0777"
 end
 directory node[:test_site][:cake_source] + '/app/tmp/tests'  do
+ owner "www-data"
+ group "www-data"
+ mode "0777"
+end
+# create uploaded directory
+directory node[:test_site][:cake_source] + '/app/webroot/img/uploaded' do
  owner "www-data"
  group "www-data"
  mode "0777"
