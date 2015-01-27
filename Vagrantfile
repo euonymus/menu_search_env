@@ -67,8 +67,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.token = TOKEN
     vb.ssh_key_name = 'euonymus'
     # vb.image = 'CentOS 6.5 x64'
-    # vb.image = 'Ubuntu 14.04 x64' # Example
-    vb.image = '14.04 x64' # Example
+    # vb.image = 'Ubuntu 14.04 x64'
+    # vb.image = '14.04 x64'
+    vb.image = 'ubuntu-14-04-x64'
     vb.region = 'sgp1'
     vb.size = '512MB'
 
